@@ -1,0 +1,13 @@
+Task: Data Cleaning & Preprocessing — Customer Personality Analysis
+
+Dataset: marketing_campaign.csv (Kaggle: Customer Personality Analysis)
+
+Actions performed:
+- Renamed columns to snake_case.
+- Removed duplicates (0 rows removed).
+- Parsed date column Dt_Customer → dd-mm-yyyy.
+- Converted Income to numeric; removed non-numeric chars; filled 24 missing Income values with median = 51,381.5.
+- Standardized categorical text: Education, Marital_Status, Gender.
+- Derived Age from Year_Birth and flagged unrealistic ages (<15 or >100). 3 age values remained missing.
+- Coerced numeric transaction columns and filled nulls with 0.
+Output: marketing_campaign_cleaned_final.csv (2240 rows, 30 columns)
